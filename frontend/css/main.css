@@ -158,6 +158,55 @@ td {
   box-sizing: border-box;
 }
 
+.shop-bg {
+  background-color: #eee;
+  padding: 20px;
+}
+
+.shop-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.shop-item {
+  width: 33%;
+  padding: 10px;
+}
+
+.shop-item img {
+  width: 100%;
+  display: block;
+}
+
+.overlay-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 1s;
+  color: white;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.overlay-wrap:hover .overlay {
+  opacity: 1;
+  height: 50%;
+}
+
+.price {
+  font-size: 40px;
+}
 @media screen and (max-width: 1200px) {
   .bottom-container {
     flex-wrap: wrap;
