@@ -4,7 +4,6 @@ input {
 
 .navbar {
   display: flex;
-  background-color: pink;
   height: 50px;
   align-items: center;
   padding: 10px;
@@ -12,7 +11,6 @@ input {
 
 .nav-item {
   font-size: 30px;
-  color: white;
   padding: 10px;
 }
 
@@ -127,7 +125,6 @@ input[type='email'] {
 
 table {
   width: 100%;
-  min-width: 600px;
   font-size: 20px;
   background-color: white;
   vertical-align: middle;
@@ -145,4 +142,33 @@ th {
 
 td {
   padding: 20px;
+}
+
+.bottom-container {
+  display: flex;
+}
+
+.bottom-box {
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+  .bottom-container {
+    flex-wrap: wrap;
+  }
+  .bottom-box {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom-container {
+    flex-wrap: wrap;
+  }
+  .bottom-box {
+    width: 100%;
+  }
 }
