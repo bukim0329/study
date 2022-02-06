@@ -5,12 +5,15 @@ input {
 .navbar {
   display: flex;
   background-color: pink;
+  height: 50px;
+  align-items: center;
+  padding: 10px;
 }
 
-.navbar > .box {
+.nav-item {
   font-size: 30px;
   color: white;
-  padding: 30px;
+  padding: 10px;
 }
 
 .main-background {
