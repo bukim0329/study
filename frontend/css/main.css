@@ -1,5 +1,16 @@
-input, input {
+input {
   box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  background-color: pink;
+}
+
+.navbar > .box {
+  font-size: 30px;
+  color: white;
+  padding: 30px;
 }
 
 .main-background {
@@ -106,15 +117,9 @@ input[type='email'] {
 
 .skyblue-background {
   background-color: skyblue;
-  padding: 30px;
-}
-
-.shopping-cart {
-  padding: 30px;
-  width: 80%;
+  padding: 30px 200px;
   max-width: 1000px;
   margin: auto;
-  box-sizing: border-box;
 }
 
 table {
