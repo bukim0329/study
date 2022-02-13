@@ -5,17 +5,33 @@
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body style="margin: 0px">
-    <div class="alert-box">
+    <div class="alert-box id">
       <div class="flex">
-        <span style="flex-grow: 1">Alert box</span>
+        <span style="flex-grow: 1">ID를 입력하세요.</span>
         <button class="close-button">x</button>
       </div>
     </div>
-    <button onclick="document.querySelector('.alert-box').style.display= 'block'">button</button>
+    <div class="alert-box passwd">
+      <div class="flex">
+        <span style="flex-grow: 1">비밀번호를 입력하세요.</span>
+        <button class="close-button">x</button>
+      </div>
+    </div>
+    <button class="id-button">ID</button>
+    <button class="passwd-button">비밀번호</button>
     <script>
-      document.querySelector('.close-button').onclick = () => {
-        document.querySelector('.alert-box').style.display = 'none';
-      };
+      document.querySelector('.id-button').addEventListener('click', () => {
+        document.querySelector('.id').style.display = 'block';
+      });
+      document.querySelector('.passwd-button').addEventListener('click', () => {
+        document.querySelector('.passwd').style.display = 'block';
+      });
+      document.querySelector('.id .close-button').addEventListener('click', () => {
+        document.querySelector('.id').style.display = 'none';
+      });
+      document.querySelector('.passwd .close-button').addEventListener('click', () => {
+        document.querySelector('.passwd').style.display = 'none';
+      });
     </script>
   </body>
 </html>
