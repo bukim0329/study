@@ -188,24 +188,20 @@ input:focus {
   text-align: center;
 }
 
-.nav-type-container {
-  width: 720px;
-  background-color: white;
+.main__category {
   padding: 1rem;
-  box-sizing: border-box;
   border-bottom: 8px rgb(230, 230, 230) solid;
 }
 
-.nav-type {
+.categories {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
 }
 
-.nav-type > a {
+.categories > a {
   flex-grow: 1;
   box-sizing: border-box;
-  width: 226px;
+  width: 33%;
   padding: 1rem 1.3rem;
   background-color: rgb(230, 230, 230);
   border: white 1px solid;
