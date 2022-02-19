@@ -28,14 +28,6 @@ input:focus {
   color: #999999;
 }
 
-.selected-box {
-  border-bottom: 3px solid #ffd200;
-}
-
-.selected-color {
-  color: black;
-}
-
 /* header */
 
 .header {
@@ -67,8 +59,8 @@ input:focus {
   align-items: center;
 }
 
-.search__form {
-}
+/* .search__form {
+} */
 
 .search__input {
   border: 0;
@@ -230,8 +222,7 @@ input:focus {
   width: 550px;
 }
 
-.top-container,
-.top-container-daybyday {
+.main__top {
   width: 720px;
   box-sizing: border-box;
   background-color: white;
@@ -239,40 +230,42 @@ input:focus {
   border-bottom: #eee 12px solid;
 }
 
-.top-box {
+.top__inner {
   display: flex;
   flex-direction: column;
   align-content: space-around;
   padding-bottom: 20px;
 }
 
-.top-header {
+.top__header {
   width: 100%;
   display: flex;
 }
 
-.top-header > div {
+.top__title {
   font-size: 20px;
 }
 
-.top-header > div > span {
+.dailyTop__number {
   font-size: 14px;
+  color: #999;
 }
 
-.week-nav {
+.dailyTop__tabs {
   width: 100%;
   display: flex;
   padding: 1rem;
   box-sizing: border-box;
 }
 
-.week-nav-non-click {
+.dailyTop__tab {
   font-size: 20px;
   padding: 1rem;
   color: #bbbbbb;
   text-align: center;
   flex-grow: 1;
   border-bottom: 3px #f1f1f1 solid;
+  cursor: pointer;
 }
 
 .week-nav-click {
@@ -284,47 +277,45 @@ input:focus {
   border-bottom: 3px #ffd200 solid;
 }
 
-.day-rank {
+.daily__items {
   display: flex;
   flex-wrap: wrap;
 }
 
-.day-rank > a {
+.daily__itemBox {
   padding: 0.5rem;
 }
 
-.ranking-box {
+.daily__item {
   width: 120px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   border-radius: 8px;
   overflow: hidden;
 }
 
-.expected-box {
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-  width: 335px;
-  overflow: hidden;
+.daily__itemImg {
+  width: 100%;
 }
 
-.rank {
+.daily__rankingBox {
   box-sizing: border-box;
   width: 100%;
-  padding: 0.3rem;
+  padding: 0.4rem 0.6rem;
   display: flex;
   background-color: #242526;
-  vertical-align: center;
-  align-content: center;
 }
 
-.rank > img {
+.daily__rankingBox > img {
   padding: 0 0.2rem;
 }
 
-.title {
+.daily__ranking {
+  font-size: 16px;
+  color: #ffd200;
+}
+
+.item__title {
   width: 120px;
   padding: 10px 0;
   text-overflow: ellipsis;
@@ -332,14 +323,22 @@ input:focus {
   white-space: nowrap;
 }
 
-.views {
+.item__views {
   font-size: 14px;
   color: #9c9c9c;
-  vertical-align: text-top;
 }
 
-.views > img {
+.item__views > img {
   padding-right: 4px;
+}
+
+.expectedNew__top {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 335px;
+  overflow: hidden;
 }
 
 .day-ranking-top {
@@ -358,6 +357,13 @@ input:focus {
   padding: 20px;
   display: flex;
   flex-direction: column;
+}
+
+.recommand__event {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 1rem;
 }
 
 .by-application {
@@ -401,4 +407,12 @@ footer {
 
 .policy a {
   color: #bdbdbd;
+}
+
+.selected-box {
+  border-bottom: 3px solid #ffd200;
+}
+
+.selected-color {
+  color: black;
 }
