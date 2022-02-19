@@ -210,11 +210,10 @@ input:focus {
   font-weight: 600;
 }
 
-.event-box-container {
+.main__event {
   width: 720px;
   box-sizing: border-box;
   background-color: white;
-  padding: 1rem;
   display: flex;
   vertical-align: center;
   align-items: center;
@@ -222,14 +221,12 @@ input:focus {
   border-bottom: 8px rgb(230, 230, 230) solid;
 }
 
-.event-box {
-  display: flex;
-  vertical-align: center;
-  align-items: center;
+.arrowImg {
+  padding: 0 1rem;
 }
 
-.event-banner {
-  padding: 1rem;
+.event__banner {
+  padding: 1rem 0;
   width: 550px;
 }
 
