@@ -226,7 +226,7 @@ input:focus {
   width: 720px;
   box-sizing: border-box;
   background-color: white;
-  padding: 1rem;
+  padding: 2rem 1rem;
   border-bottom: #eee 12px solid;
 }
 
@@ -341,22 +341,52 @@ input:focus {
   overflow: hidden;
 }
 
-.day-ranking-top {
+.dailyRankingTop {
+  display: flex;
+  flex-direction: column;
+}
+
+.dailyRankingTop__li {
+  padding: 0.5rem 0;
+}
+
+.dailyRankingTop__link {
   display: flex;
   width: 100%;
   align-items: center;
 }
 
-.day-ranking-top-img {
+.dailyRanking {
+  font-weight: 700;
+  padding: 10px;
+  padding-right: 26px;
+  font-size: 22px;
+  width: 0.6rem;
+}
+
+.dailyRankingImgBox {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
 }
 
-.day-ranking-top-description {
+.dailyRankingImg {
+  position: absolute;
+}
+
+.dailyRankingDescription {
   padding: 20px;
   display: flex;
   flex-direction: column;
+}
+
+.dailyRankingTitle {
+  padding: 4px 0;
+}
+
+.dailyRankingInfo {
+  font-size: 14px;
+  color: #9c9c9c;
 }
 
 .recommand__event {
