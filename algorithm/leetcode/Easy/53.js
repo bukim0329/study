@@ -3,10 +3,9 @@
  * @return {number}
  */
 const maxSubArray = function (nums) {
-  const dp = [];
+  const DP = [-Infinity];
   nums.forEach((val, ind) => {
-    dp[ind] = (dp[ind - 1] || 0) > 0 ? (dp[ind - 1] || 0) + val : val;
+    DP[ind + 1] = Math.max(DP[ind] + val, val);
   });
-
-  return Math.max(...dp);
+  return Math.max(...DP);
 };

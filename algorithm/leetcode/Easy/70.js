@@ -3,10 +3,9 @@
  * @return {number}
  */
 const climbStairs = function (n) {
-  const dp = [0, 1, 2];
-  for (let i = 3; i <= n; i += 1) {
-    dp[i] = dp[i - 1] + dp[i - 2];
+  const DP = [1, 2, 3];
+  for (let i = 3; i < n; i += 1) {
+    DP[i] = DP[i - 2] + DP[i - 1];
   }
-
-  return dp[n];
+  return DP[n - 1];
 };
